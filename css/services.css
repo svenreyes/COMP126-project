@@ -1,0 +1,135 @@
+body {
+    font-family: var(--font-serif);
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg);
+    color: var(--text-dark);
+    line-height: 1.6;
+}
+header{
+    background-color: #D9D9D9;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+header img{
+    max-width: 60%;
+    max-height: 60%;
+    justify-self: center;
+    align-self: center;
+}
+.navcontainer{
+    background-color: #858585;
+}
+ul{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    text-decoration: none;
+    justify-content: space-around;
+    color:black;
+    
+}
+.container{
+    display: grid;
+    grid-template-rows: .5fr 4fr 4fr;
+    margin: 10px;
+    padding: 10px;
+}
+
+.item2{
+    display: grid;
+    grid-template-rows: 1fr 3fr;
+    border: solid;
+    border-color: lightgray;
+}
+.item3 {
+    display: grid;
+    grid-template-rows: 1fr 3fr;
+    border:solid;
+    border-color: lightgray;
+}
+
+#title{
+    color: #873A91;
+}
+
+#header{
+    color: #FF00FF;
+}
+footer{
+    display: none;
+}
+
+@media screen and (min-width: 480px){
+    body {
+        font-family: var(--font-serif);
+        margin: 0;
+        padding: 0;
+        background-color: var(--bg);
+        color: var(--text-dark);
+        line-height: 1.6;
+    }
+
+    header{
+
+    
+    }
+
+    .container{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 3fr;
+        gap: 30px;
+    }
+
+    .item1{
+        font-size: 40px;
+        grid-column: 1/3;
+        align-self: center;
+        justify-self: center;
+    }
+    .item2 {
+        display: grid;
+        grid-template-rows: 1fr 2.5fr;
+        border: solid;
+        border-color: lightgray;
+    }
+    #header{
+        font-size: 35px;
+        align-self: center;
+        justify-self: center;
+    }
+
+    .item2content{
+        font-size: 20px;
+    }
+    .item3 {
+        display: grid;
+        grid-template-rows: 1fr 2.5fr;
+        border: solid;
+        border-color: lightgray;
+    }
+    .item3content{
+        font-size: 20px;
+    }
+    footer{
+        background-color: #D9D9D9;
+        height: 70px;
+        width: 100%;
+        padding: 15px 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    footer p {
+        margin: 0;
+    }
+    #phone{
+        font-weight: bold;
+    }
+    #email{
+        font-weight: bold;
+        text-decoration: underline;
+    }
+}
