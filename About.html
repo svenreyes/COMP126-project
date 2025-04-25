@@ -9,29 +9,59 @@
 </head>
 <body>
 
-    <header class="site-header">
-        <a href="#" class="logo">
-          <img src="/img/crown.png" alt="The Clean Queen logo" class="logo-img" />
-          <h1>The Clean Queen</h1>
-        </a>
-      
-        <nav class="nav-collapse">
-          <ul>
-            <li><a href="about.html" class="active">About us</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="contact.html">Contact us</a></li>
-          </ul>
-        </nav>
-    </header>
+  <header class="site-header">
+    <a href="#" class="logo">
+      <img src="/img/crown.png" alt="The Clean Queen logo" class="logo-img" />
+    </a>
+
+    <nav class="nav-collapse">
+      <ul>
+        <li><a href="about.html" class="active">About us</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact us</a></li>
+      </ul>
+    </nav>
+  </header>
 
   <main>
     <section class="about-section">
       <h2>Our Story</h2>
       <p>
         Our company was founded in the North Carolina metro area in 2013 as one of the first whole house cleaning services in the region.
-        This quality commitment and reputation for excellent service attracted outside investors. The Cleaning Queen is widely recognized
+        This quality commitment and reputation for excellent service attracted outside investors. The Clean Queen is widely recognized
         for our commitment to serving our customers while staying friendly to the environment.
       </p>
+    </section>
+
+    <section class="feature feature--left">
+      <div class="feature-text">
+        <h2>We Clean Houses</h2>
+        <p>
+          In 1984, entrepreneur David McKinnon brought Molly Maid from Canada to Ann Arbor, Michigan, to give busy American homeowners a
+          reliable, professional, affordable solution to messy, dirty houses. Today, there are more than 450 independently owned Clean
+          Queen franchises nationwide, with over 1.7 million cleanings performed last year—90% for repeat customers.
+        </p>
+        <p>
+          Our teams are insured, bonded, and use only eco-friendly products—so you can rest easy knowing your home is in safe, sustainable
+          hands every time.
+        </p>
+      </div>
+      <div class="feature-image">
+        <img src="/img/cleaning-team.jpeg" alt="Cleaning team at work" />
+      </div>
+    </section>
+
+    <section class="feature feature--right">
+      <div class="feature-image">
+        <img src="/img/happy-client.jpeg" alt="Happy client in clean home" />
+      </div>
+      <div class="feature-text">
+        <h2>Your Satisfaction</h2>
+        <p>
+          We take pride in delivering a spotless home every time. Our eco-friendly products, trained professionals, and satisfaction
+          guarantee make sure you feel right at home—without lifting a finger.
+        </p>
+      </div>
     </section>
 
     <section class="testimonials">
@@ -46,34 +76,68 @@
       </div>
     </section>
 
-    <section class="reviews">
-      <h2>Reviews</h2>
-      <form>
-        <label for="name">Name</label>
-        <input type="text" id="name" name="name" value="Pietro Schirano" />
-
-        <label for="username">Username</label>
-        <input type="text" id="username" name="username" />
-
-        <label for="review">Review</label>
-        <textarea id="review" name="review" rows="4" placeholder="Leave a review of your experience!"></textarea>
-
-        <button type="submit" class="btn">Submit</button>
-      </form>
+    <section class="values">
+      <h2>Our Values</h2>
+      <div class="value-list">
+        <div class="value-item">
+          <img src="/img/trust.png" alt="Trust icon" />
+          <h3>Trust</h3>
+          <p>We treat every home with care, honesty, and professionalism.</p>
+        </div>
+        <div class="value-item">
+          <img src="/img/eco.png" alt="Eco-friendly icon" />
+          <h3>Sustainability</h3>
+          <p>We use eco-friendly products to protect your home and the planet.</p>
+        </div>
+        <div class="value-item">
+          <img src="/img/value.png" alt="Punctuality icon" />
+          <h3>Reliability</h3>
+          <p>Always on time, every time—because your time matters.</p>
+        </div>
+      </div>
     </section>
   </main>
 
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <img src="/img/crown.png" alt="The Clean Queen logo" />
+        <h2>The Clean Queen</h2>
+      </div>
+
+      <div class="footer-contact">
+        <p>
+          <a class="phone-number" href="tel:+19199951227">(919) 995-1227</a>
+        </p>
+        <p><strong>📍</strong> Based in North Carolina</p>
+        <p><strong>✉️</strong> <a href="mailto:thecleanqueennc@gmail.com">thecleanqueennc@gmail.com</a></p>
+      </div>
+
+      <div class="footer-services">
+        <h3>Services</h3>
+        <ul>
+          <li>Residential</li>
+          <li>Move-Out Cleaning</li>
+          <li>Eco-Friendly Products</li>
+        </ul>
+      </div>
+
+      <p class="footer-copyright">
+        &copy; 2025 The Clean Queen. All rights reserved.
+      </p>
+    </div>
+  </footer>
+
+  <script src="js/responsive-nav.js"></script>
+  <script>
+    var nav = responsiveNav(".nav-collapse", {
+      animate: true,
+      transition: 284,
+      label: "☰",
+      insert: "after",
+      closeOnNavClick: true,
+      openPos: "relative",
+    });
+  </script>
 </body>
-<script src="js/responsive-nav.js"></script>
-<script>
-  var nav = responsiveNav(".nav-collapse", {
-    animate: true,                // CSS transition
-    transition: 284,              // ms transition speed
-    label: "☰",                   // Hamburger label
-    insert: "after",              // Insert toggle after nav
-    customToggle: "",             // Let the plugin generate the button
-    closeOnNavClick: true,        // Close nav on item click (good for one-pagers)
-    openPos: "relative",          // Positioning context
-  });
-</script>
 </html>
