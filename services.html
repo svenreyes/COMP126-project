@@ -5,26 +5,23 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, 
        initial-scale-1, shrink-to-fit=no">
-    <title>This appears in the browser tab</title>
+    <title>Services</title>
     <link rel="stylesheet" href="css/services.css">
     <link rel="stylesheet" href="responsive-nav.css">
     <script src="responsive-nav.js"></script>
 </head>
 
 <body>
-    <header>
-        <img src = "img/FinalLogo.png" alt = "Company Logo">
-        <nav class = "navcontainer">
+    <header class="site-header">
+        <a href="#" class="logo">
+            <img src="/img/crown.png" alt="The Clean Queen logo" class="logo-img" />
+        </a>
+    
+        <nav class="nav-collapse">
             <ul>
-                <li>
-                    <a href = "About.html">About Us </a>
-                </li>
-                <li>
-                    <a href = "services.html">Services </a>
-                </li>
-                <li>
-                    <a href = "contact.html">Contact Us </a>
-                </li>
+                <li><a href="about.html">About us</a></li>
+                <li><a href="services.html" class = "active">Services</a></li>
+                <li><a href="contact.html">Contact us</a></li>
             </ul>
         </nav>
     </header>
@@ -59,14 +56,45 @@
         </div>
     </div>
 
-    <footer>
-        <div class = footercontacts>
-            <p id = "phone">Cellphone: (919) 995 1227 </p> <br/>
-            <p id = "email">thecleanqueennc@gmail.com </p>
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <img src="/img/crown.png" alt="The Clean Queen logo" />
+                <h2>The Clean Queen</h2>
+            </div>
+    
+            <div class="footer-contact">
+                <p>
+                    <a class="phone-number" href="tel:+19199951227">(919) 995-1227</a>
+                </p>
+                <p><strong>📍</strong> Based in North Carolina</p>
+                <p><strong>✉️</strong> <a href="mailto:thecleanqueennc@gmail.com">thecleanqueennc@gmail.com</a></p>
+            </div>
+    
+            <div class="footer-services">
+                <h3>Services</h3>
+                <ul>
+                    <li>Residential</li>
+                    <li>Move-Out Cleaning</li>
+                    <li>Eco-Friendly Products</li>
+                </ul>
+            </div>
+    
+            <p class="footer-copyright">
+                &copy; 2025 The Clean Queen. All rights reserved.
+            </p>
         </div>
     </footer>
+    <script src="js/responsive-nav.js"></script>
     <script>
-        var nav = responsiveNav(".nav-collapse");
+        var nav = responsiveNav(".nav-collapse", {
+            animate: true,
+            transition: 284,
+            label: "☰",
+            insert: "after",
+            closeOnNavClick: true,
+            openPos: "relative",
+        });
     </script>
 </body>
 
