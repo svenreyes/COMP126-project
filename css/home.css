@@ -147,7 +147,7 @@
 
   .top-button:hover,
     .top-button:focus {
-  background-color: #962ecf;
+  background: #962ecf;
   }
   
   .intro {
@@ -180,7 +180,7 @@
 
   .intro-button:hover,
     .intro-button:focus {
-  background-color: #962ecf;
+    background: #962ecf;
   }
   
   .image-section img {
