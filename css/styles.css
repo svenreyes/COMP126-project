@@ -91,6 +91,25 @@ button.nav-toggle {
 .nav-collapse.opened { max-height: 300px; }
 .nav-collapse.closed { max-height: 0; overflow: hidden; }
 
+.nav-toggle {
+  position: absolute;
+  top: 50%;
+  right: 1rem;
+  transform: translateY(-50%);
+  font-size: 1.8rem;
+  color: var(--text-dark);
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.nav-toggle:hover,
+.nav-toggle:focus {
+  text-decoration: none;
+}
+
 /* Desktop nav */
 @media screen and (min-width: 768px) {
   .nav-toggle,button.nav-toggle { display: none !important; }
