@@ -1,1 +1,127 @@
 <!-- Jules -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home | The Clean Queen</title>
+  <link rel="stylesheet" href="css/home.css"/>
+</head>
+<body>
+
+  <header class="site-header">
+    <a href="index.html" class="logo">
+      <img src="/img/crown.png" alt="The Clean Queen logo" class="logo-img" />
+    </a>
+
+    <nav class="nav-collapse">
+      <ul>
+        <li><a href="about.html" class="active">About us</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="top">
+      <div class="top-text">Enjoy a Freshly Cleaned Home</div>
+      <a href="services.html" class="top-button">Get Pricing</a>
+    </section>
+  
+    <div class = "intro-and-photo">
+      <section class="intro">
+        <h1>Your home is a castle so have it cleaned like one</h1>
+        <p>The Clean Queen a family owned and operated business committed to the satisfaction of our customers. It is our goal to provide exceptional cleaning and extraordinary service to customers in the Chapel Hill area. When you call upon our team, you will get to save both time and energy, while still enjoying the benefits of coming home to a sparkling clean house.</p>
+        <a href="services.html" class="intro-button">Learn More</a>
+      </section>
+
+      <section class="image-section">
+        <img src="/img/mirror-clean.png" alt="Cleaning Service">
+      </section>
+    </div>
+
+    <section class="services">
+      <h2>Quality Cleaning Services Chapel Hill NC</h2>
+      <p class="services-intro">
+        When it comes to deep house cleaning in Chapel Hill, NC, The Maids is the premier choice.
+        Our maid services are designed to give you the peace of mind and freedom that comes with a clean and healthy home.
+        Let us create a clean living environment for you and your family.
+      </p>
+    
+      <div class="service-list">
+        <div class="service-item">
+          <img src="/img/another-lady.webp" alt="Deep Cleaning" height = "100px" width = "100px">
+          <div class="service-text">
+            <h3>One Time Deep Cleaning</h3>
+            <p>We offer one time deep cleaning services to help you get a jump start on organizing and tidying up your home. Our team uses high quality products and techniques to ensure your home is sparkling clean from top to bottom.</p>
+          </div>
+        </div>
+    
+        <div class="service-item">
+          <img src="/img/2-ladies.webp" alt="Maid Service" height = 100px width = 100px>
+          <div class="service-text">
+            <h3>Regular Maid Service</h3>
+            <p>We offer weekly, bi-weekly, or monthly maid services to keep your home clean and fresh. Enjoy the benefits of a clean space without breaking the bank!</p>
+          </div>
+        </div>
+    
+        <div class="service-item">
+          <img src="/img/cleaner-lady.webp" alt="Move Out Cleaning">
+          <div class="service-text">
+            <h3>Move In / Move Out Cleaning</h3>
+            <p>We specialize in move-in and move-out cleaning, helping you leave your old home spotless and your new home fresh and ready for living.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <img src="/img/crown.png" alt="The Clean Queen logo" />
+        <h2>The Clean Queen</h2>
+      </div>
+
+      <div class="footer-contact">
+        <p>
+          <a class="phone-number" href="tel:+19199951227">(919) 995-1227</a>
+        </p>
+        <p><strong>📍</strong> Based in North Carolina</p>
+        <p><strong>✉️</strong> <a href="mailto:thecleanqueennc@gmail.com">thecleanqueennc@gmail.com</a></p>
+      </div>
+
+      <div class="footer-services">
+        <h3>Services</h3>
+        <ul>
+          <li>Residential</li>
+          <li>Move-Out Cleaning</li>
+          <li>Eco-Friendly Products</li>
+        </ul>
+      </div>
+
+      <p class="footer-copyright">
+        &copy; 2025 The Clean Queen. All rights reserved.
+      </p>
+
+      <p class="footer-copyright">
+        &copy; images from Molly Maid
+      </p>
+      
+    </div>
+  </footer>
+
+  <script src="js/responsive-nav.js"></script>
+  <script>
+    var nav = responsiveNav(".nav-collapse", {
+      animate: true,
+      transition: 284,
+      label: "☰",
+      insert: "after",
+      closeOnNavClick: true,
+      openPos: "relative",
+    });
+  </script>
+</body>
+</html>
