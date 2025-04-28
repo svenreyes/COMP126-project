@@ -1,1 +1,140 @@
 <!-- Rachit -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact us | The Clean Queen</title>
+  <link rel="stylesheet" href="css/contact.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <a href="index.html" class="logo">
+      <img src="/img/crown.png" alt="The Clean Queen logo" class="logo-img" />
+    </a>
+
+    <nav class="nav-collapse">
+      <ul>
+        <li><a href="about.html" class="active">About us</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <h1>Schedule an Estimate</h1>
+<div class = "total">
+  <form class = "form1">
+    <h2>Contact Us</h2>
+    <label for="name">Name</label>
+    <input type="text" id="name" name="name">
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email">
+    <label for="message">Message</label>
+    <textarea id="message" name="message"></textarea>
+    <input type="submit" value="Submit">
+  </form>
+  <div class="bio">
+    <h1>Meet Our Team:</h2>
+    <img class = "cleaning" src="img/Cleaning2.jpg" alt="Image of Wiping Kitchen Table">
+    <div class="description">
+    <h2>Maluisa Rios</h2>
+    <p class = "description"> She is a practical, detail-oriented person who built a small cleaning business from the ground up. Most days, she juggles calls, scheduling, and tracking supplies, all while keeping high quality and customer satisfaction. </p>
+    </div>
+  </div>
+</div>
+<form class="form2">
+    <h2>Schedule an Appointment</h2>
+    <label for="date">Date</label>
+<div class = "calendar">
+  <div class="month">
+    <ul>
+      <li class="prev">&#8592;</li>
+      <li class="next">&#8594;</li>
+      <li>April 2025</li>
+    </ul>
+  </div>
+  
+  <ul class="days">
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+    <li>5</li>
+    <li>6</li>
+    <li>7</li>
+    <li>8</li>
+    <li>9</li>
+    <li>10</li>
+    <li>11</li>
+    <li>12</li>
+    <li>13</li>
+    <li>14</li>
+    <li>15</li>
+    <li>16</li>
+    <li>17</li>
+    <li>18</li>
+    <li>19</li>
+    <li>20</li>
+    <li>21</li>
+    <li>22</li>
+    <li>23</li>
+    <li>24</li>
+    <li>25</li>
+    <li>26</li>
+    <li>27</li>
+    <li>28</li>
+    <li>29</li>
+    <li>30</li>
+  </ul>
+</div>
+
+<label for="time">Time</label>
+<input type="text" id="time" name="time">
+<input type="submit" value="Submit">
+</form>
+<footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <img src="/img/crown.png" alt="The Clean Queen logo" />
+        <h2>The Clean Queen</h2>
+      </div>
+
+      <div class="footer-contact">
+        <p>
+          <a class="phone-number" href="tel:+19199951227">(919) 995-1227</a>
+        </p>
+        <p><strong>📍</strong> Based in North Carolina</p>
+        <p><strong>✉️</strong> <a href="mailto:thecleanqueennc@gmail.com">thecleanqueennc@gmail.com</a></p>
+      </div>
+
+      <div class="footer-services">
+        <h3>Services</h3>
+        <ul>
+          <li>Residential</li>
+          <li>Move-Out Cleaning</li>
+          <li>Eco-Friendly Products</li>
+        </ul>
+      </div>
+
+      <p class="footer-copyright">
+        &copy; 2025 The Clean Queen. All rights reserved.
+      </p>
+    </div>
+  </footer>
+
+  <script src="js/responsive-nav.js"></script>
+  <script>
+    var nav = responsiveNav(".nav-collapse", {
+      animate: true,
+      transition: 284,
+      label: "☰",
+      insert: "after",
+      closeOnNavClick: true,
+      openPos: "relative",
+    });
+  </script>
+</body>
+</html>
+
