@@ -91,7 +91,7 @@ ul{
     grid-template-columns: 1fr 1fr 1fr;
     border: solid;
     border-color: lightgray;
-    margin-left: 10px;
+    
 }
 
 .imagewindow img {
@@ -380,7 +380,8 @@ ul{
         position: sticky;
         top: 0;
         left: 0;
-        width: 100%;
+        width: 97%;
         z-index: 1000;
     }
+        
 }
