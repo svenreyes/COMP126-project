@@ -127,6 +127,7 @@ ul{
     text-decoration: none;
 }
 
+
 .nav-toggle {
     position: absolute;
     top: 50%;
@@ -253,8 +254,8 @@ ul{
 }
 
 .site-footer p.footer-copyright {
-    font-size: 0.8rem;
-    margin-top: 1rem;
+    font-size: 0.65rem;
+    margin-top: .8rem;
     color: var(--text-light);
 }
 
