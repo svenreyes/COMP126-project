@@ -1,3 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap');
+
+:root {
+    --primary: #8c4fc9;
+    --text-dark: #2b2b2b;
+    --text-light: #575757;
+    --bg: #ffffff;
+    --font-display: 'Baskerville', 'PT Serif', serif;
+    --font-body: 'PT Serif', serif;
+}
 body {
     font-family: var(--font-serif);
     margin: 0;
@@ -28,24 +38,69 @@ ul{
     color:black;
     
 }
+
 .container{
     display: grid;
     grid-template-rows: .5fr 4fr 4fr;
     margin: 10px;
-    padding-left: 10px;
+    padding: 20px;
+    gap: 10px;
 }
 
 .item2{
     display: grid;
-    grid-template-rows: 1fr 3fr;
+    grid-template-rows: .25fr 1fr 3fr;
     border: solid;
     border-color: lightgray;
+    padding-bottom: 10px;
 }
 .item3 {
     display: grid;
-    grid-template-rows: 1fr 3fr;
+    grid-template-rows: .25fr 1fr 3fr;
     border:solid;
     border-color: lightgray;
+    padding-top:10px;
+    
+}
+.item2image{
+    justify-self: center;
+    align-self: center;
+}
+
+.item3image{
+    justify-self: center;
+    align-self: center;
+}
+
+.item2image img{
+    width: 150px;
+    height: 150px;
+}
+.item3image img {
+    width: 150px;
+    height: 150px;
+}
+.item2content{
+    padding: 15px;
+}
+.item3content{
+    padding: 15px;
+}
+.imagewindow{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    border: solid;
+    border-color: lightgray;
+    margin-left: 10px;
+}
+
+.imagewindow img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    margin-bottom: 0.5rem;
+    align-self: center;
+    justify-self: center;
 }
 
 #title{
@@ -217,6 +272,7 @@ ul{
         flex-direction: row;
         gap: 2rem;
     }
+
     body {
         font-family: var(--font-serif);
         margin: 0;
@@ -229,7 +285,7 @@ ul{
     .container{
         display:grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: .25fr 1fr;
+        grid-template-rows: .20fr 1fr;
         gap: 30px;
     }
 
@@ -241,7 +297,7 @@ ul{
     }
     .item2 {
         display: grid;
-        grid-template-rows: 1fr 2.5fr;
+        grid-template-rows: .25fr 1fr 2.5fr;
         border: solid;
         border-color: lightgray;
     }
@@ -256,10 +312,25 @@ ul{
     }
     .item3 {
         display: grid;
-        grid-template-rows: 1fr 2.5fr;
+        grid-template-rows: .25fr 1fr 2.5fr;
         border: solid;
         border-color: lightgray;
     }
+
+    .item2image img{
+        justify-self: center;
+        align-self: center;
+        width: 200px;
+        height: 200px;
+    }
+
+    .item3image img{
+        justify-self: center;
+        align-self: center;
+        width: 200px;
+        height: 200px;
+    }
+
     .item3content{
         font-size: 20px;
     }
@@ -271,6 +342,21 @@ ul{
     #email{
         font-weight: bold;
         text-decoration: underline;
+    }
+    .imagewindow {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        border: solid;
+        border-color: lightgray;
+    }
+
+    .imagewindow img {
+        width: 150px;
+        height: 150px;
+        object-fit: contain;
+        margin-bottom: 0.5rem;
+        align-self: center;
+        justify-self: center;
     }
 
     .footer-container {
